@@ -83,7 +83,7 @@ var anotherPersion1 = Object.create(Person);
 anotherPersion1.name = 'West';
 console.log(anotherPersion1);
 
-// 寄生式继承 - 与原型式继承紧密相关，即创建一个仅用于封装继承过程的函数（在内部的以某种方式增强对象，最后返回）
+// 寄生式继承 - 与原型式继承紧密相关，寄生就是封装，即创建一个仅用于封装继承过程的函数（在内部的以某种方式增强对象，最后返回）
 function createAnother(original) {
   var clone =  Object.create(Person);
   clone.sayHi = function () {
